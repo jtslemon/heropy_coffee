@@ -30,8 +30,13 @@
     <link rel="stylesheet" href="./css/base.css" type="text/css">
     <!-- 구글아이콘 -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <!-- 부드러운 애니메이션 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- 프리픽스 -->
-    <script src="./script/prefixfree.min.js"></script>
+    <!-- <script src="./script/prefixfree.min.js"></script> -->
+    <!--  -->
+
+    <script src="./scripts/main.js" defer></script>
 </head>
 <body>
     <!-- 헤더영역 -->
@@ -301,8 +306,27 @@
     </header>
     <!-- 메인영역 -->
     <main>
-        <section class="slide">
-            <h2>제목</h2>
+        <section class="visual">
+            <h2>메인 비주얼 이미지</h2>
+            <div class="inner">
+                <div class="title fadeIn">
+                    <img src="./images/visual_title.png" alt="">
+                    <a href="#" title="자세히보기" class="detail_btn">자세히 보기</a>
+                </div>
+
+                <div class="fadeIn">
+                    <img src="./images/visual_cup1.png" alt="" class="cup1">
+                    <img src="./images/visual_cup1_text.png" alt="" class="cup1_txt">
+                </div>
+
+                <div class="fadeIn">
+                    <img src="./images/visual_cup2.png" alt="" class="cup2">
+                    <img src="./images/visual_cup2_text.png" alt="" class="cup2_txt">
+                </div>
+
+                <div class="fadeIn">
+                    <img src="./images/visual_spoon.png" alt="" class="spoon">
+                </div>
             </div>
         </section>
         <section class="section2-3">
@@ -326,6 +350,16 @@
         <section class="section2-9">
             <h2>제목</h2>
         </section>
+        <!-- 베너 배지 -->
+        <aside class="badges">
+            <a href="#" title="디저트 50%할인">
+                <img src="./images/badge1.jpg" alt="">
+            </a>
+            <br>
+            <a href="#" title="골드 회원 가입">
+                <img src="./images/badge2.jpg" alt="">
+            </a>
+        </aside>
     </main>
     <!-- 푸터영역 -->
     <footer>
