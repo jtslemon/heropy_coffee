@@ -31,11 +31,11 @@
     <!-- 구글아이콘 -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <!-- 부드러운 애니메이션 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
     <!-- 프리픽스 -->
     <!-- <script src="./script/prefixfree.min.js"></script> -->
     <!--  -->
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="./scripts/main.js" defer></script>
 </head>
 <body>
@@ -329,11 +329,64 @@
                 </div>
             </div>
         </section>
-        <section class="section2-3">
-            <h2>제목</h2>
+
+        <section class="notice">
+            <div class="n_inner">
+                <div class="n_inner__left">
+                    <h2>공지사항</h2>
+                    <div class="swiper s_notice">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="javascript:void(0)">크리스마스 & 연말연시 매장 영업시간 변경 안내</a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0)">[당첨자 발표] 커피 영수증 이벤트</a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0)">애플리케이션 버전 업데이트 안내</a></div>
+                            <div class="swiper-slide"><a href="javascript:void(0)">[당첨자 발표] 전자영수증 이벤트</a></div>
+                        </div>
+                    </div>
+                    <i class="material-icons">add_circle</i>
+                </div>
+                <div class="n_inner__right">
+                    <h2>커피 프로모션</h2>
+                    <div class="toggle-promotion">
+                        <div class="material-icons">upload</div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="section2-4">
-            <h2>제목</h2>
+
+        <!-- 프로모션 -->
+        <section class="promotion">
+            <h2>프로모션</h2>
+            <div class="swiper proslide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/promotion_slide1.jpg" alt="">
+                        <span href="javascript:void(0)" title="프로모션1" class="btn">자세히보기</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/promotion_slide2.jpg" alt="">
+                        <span href="javascript:void(0)" title="프로모션2" class="btn">자세히보기</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/promotion_slide3.jpg" alt="">
+                        <span href="javascript:void(0)" title="프로모션3" class="btn">자세히보기</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/promotion_slide4.jpg" alt="">
+                        <span href="javascript:void(0)" title="프로모션4" class="btn">자세히보기</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/promotion_slide5.jpg" alt="">
+                        <span href="javascript:void(0)" title="프로모션5" class="btn">자세히보기</span>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev">
+                    <span class="material-icons">arrow_back</span>
+                </div>
+                <div class="swiper-button-next">
+                    <span class="material-icons">arrow_forward</span>
+                </div>
+              </div>
         </section>
         <section class="section2-5">
             <h2>제목</h2>
@@ -365,5 +418,29 @@
     <footer>
         <h2>푸터</h2>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".s_notice", {
+            direction: "vertical",
+            autoplay: true,
+            loop: true,
+        });
+        var swiper = new Swiper(".proslide", { // 객체생성
+            slidesPerView: 3,
+            spaceBetween: 10,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+            autoplay: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 </html>

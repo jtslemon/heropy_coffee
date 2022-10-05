@@ -27,3 +27,15 @@ fadeEl.forEach(function(fadeEl, index){
         opacity: 1
     });
 });
+
+const promotionEl = document.querySelector('section.promotion');
+const promotionToggleBtn = document.querySelector('.toggle-promotion');
+// 토글 버튼을 클릭했을 때
+promotionToggleBtn.addEventListener('click', function () {
+    if(promotionEl.classList.contains('hide')){
+        promotionEl.classList.remove('hide');
+    }
+    else{
+        promotionEl.classList.add('hide');
+    }
+})
