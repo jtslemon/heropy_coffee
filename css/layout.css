@@ -97,6 +97,27 @@ header .header_inner h1{padding-top: 20px;}
 .gnb > ul > li:hover .item_content{
     display: block;
 }
+
+/* 버튼 서식 */
+.btn{
+    width: 130px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    transition: .4s;
+}
+.btn:hover{
+    background-color: #333;
+    color: #fff;
+}
+
 /* 서브메뉴 박스 */
 .item_content{
     display: none;
@@ -148,7 +169,7 @@ header .header_inner h1{padding-top: 20px;}
 
 
 main{}
-/* .slide{
+.slide{
     height: 650px;
     background-color: #0ff0f0;
 }
@@ -187,4 +208,4 @@ main{}
 footer{
     height: 470px;
     background-color: #00ff0f;
-} */
+}
