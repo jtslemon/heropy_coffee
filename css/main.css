@@ -286,6 +286,9 @@ main{
     position: relative;
     z-index: 12;
 }
+.movie .m_inner > h2{
+    display: none;
+}
 .movie .m_inner img{
     position: absolute;
 }
@@ -523,6 +526,9 @@ main{
 
 .awards{
     background-color: #282828;
+}
+.awards h2{
+    display: none;
 }
 .awards .a_inner{
     width: 1100px;
